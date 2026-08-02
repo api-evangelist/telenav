@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: derived
+status: candidate
+source: https://docs.telenav.com/overview/entity-rest.html
+notes: >-
+  No official Telenav MCP server was found (docs, GitHub org, npm, MCP
+  registries). Telenav publishes no OpenAPI, so this candidate tool list is
+  derived from the documented Entity Service REST v5 endpoints on
+  docs.telenav.com rather than from spec operationIds.
+server:
+  name: telenav-entity
+  transport: http
+tools:
+  - name: search_entities
+    description: Location-based semantic (onebox) search for POIs and addresses, with category/brand/corridor/polygon/bbox/EV filters and reverse geocoding.
+    source_operation: https://docs.telenav.com/entity-rest/search.html (POST /v5/search/json)
+  - name: search_by_exit
+    description: Search for places near a specific highway exit.
+    source_operation: https://docs.telenav.com/entity-rest/search.html (POST /v5/search/byexit/json)
+  - name: suggest_entities
+    description: Fast auto-suggest entity predictions from partial query input.
+    source_operation: https://docs.telenav.com/entity-rest/prediction.html (GET/POST /v5/prediction/suggestion/json)
+  - name: predict_words
+    description: Word prediction for query composition.
+    source_operation: https://docs.telenav.com/entity-rest/prediction.html (POST /v5/prediction/word/json)
+  - name: get_entity_details
+    description: Retrieve detailed information for one or more entity IDs (batch supported).
+    source_operation: https://docs.telenav.com/entity-rest/lookup.html (GET/POST /v5/detail/json)
+  - name: discover_places
+    description: Discover places for a category with polygon/bbox/radius and EV-charging filters (lite results up to 1000).
+    source_operation: https://docs.telenav.com/entity-rest/discover.html (POST /v5/discover/place/json)
+  - name: discover_brands
+    description: Discover business brands near a location.
+    source_operation: https://docs.telenav.com/entity-rest/discover.html (POST /v5/discover/brand/json)
+  - name: discover_categories
+    description: Discover categories near a location.
+    source_operation: https://docs.telenav.com/entity-rest/discover.html (POST /v5/discover/category/json)
+  - name: get_categories
+    description: Retrieve the Telenav POI category tree.
+    source_operation: https://docs.telenav.com/entity-rest/discover.html (GET /v5/category/json)

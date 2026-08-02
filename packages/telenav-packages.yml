@@ -1,0 +1,67 @@
+generated: '2026-07-21'
+method: searched
+source: https://search.maven.org/
+notes: >-
+  Telenav's product SDKs (Entity SDK for Android/iOS, Nav TA SDK, Drive
+  Motion SDKs for Android/iOS/React Native, EH Service for C++/Android) are
+  distributed to automotive partners rather than through public registries;
+  they are documented on docs.telenav.com. The public-registry footprint is
+  Telenav's open-source Java tooling on Maven Central (verified via
+  search.maven.org). No packages were found on npm.
+packages:
+  - language: java
+    registry: maven-central
+    name: com.telenav.kivakit
+    url: https://central.sonatype.com/search?q=g%3Acom.telenav.kivakit
+    install: "implementation 'com.telenav.kivakit:kivakit-core:1.17.1'"
+    description: KivaKit — integrated Java mini-frameworks for everyday development (100 artifacts, latest 1.17.1).
+    repo: https://github.com/Telenav/kivakit
+    official: true
+  - language: java
+    registry: maven-central
+    name: com.telenav.mesakit
+    url: https://central.sonatype.com/search?q=g%3Acom.telenav.mesakit
+    install: "implementation 'com.telenav.mesakit:mesakit-map-geography:<version>'"
+    description: MesaKit — toolkit for creating mapping and navigation software (71 artifacts).
+    repo: https://github.com/Telenav/mesakit
+    official: true
+  - language: java
+    registry: maven-central
+    name: com.telenav.lexakai
+    url: https://central.sonatype.com/search?q=g%3Acom.telenav.lexakai
+    install: "implementation 'com.telenav.lexakai:lexakai:<version>'"
+    description: Lexakai — generates markdown and UML from Java source code (9 artifacts).
+    repo: https://github.com/Telenav/lexakai
+    official: true
+sdks:
+  - name: Entity SDK (Android)
+    platform: android
+    distribution: partner
+    docs: https://docs.telenav.com/overview/entity-android.html
+    official: true
+  - name: Entity SDK (iOS)
+    platform: ios
+    distribution: partner
+    docs: https://docs.telenav.com/overview/entity-ios.html
+    official: true
+  - name: Nav TA SDK (C++/Android)
+    platform: cpp-android
+    distribution: partner
+    docs: https://docs.telenav.com/overview/nav-tasdk.html
+    demo: https://github.com/Telenav/nav-sdk-demo
+    official: true
+  - name: Drive Motion SDK (Android)
+    platform: android
+    distribution: partner
+    docs: https://docs.telenav.com/overview/drivemotion-android.html
+    official: true
+  - name: Drive Motion SDK (iOS)
+    platform: ios
+    distribution: partner
+    docs: https://docs.telenav.com/overview/drivemotion-ios.html
+    official: true
+  - name: Drive Motion SDK (React Native)
+    platform: react-native
+    distribution: partner
+    docs: https://docs.telenav.com/overview/drivemotion-react-native.html
+    official: true

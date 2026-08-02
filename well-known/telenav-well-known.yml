@@ -1,0 +1,23 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.telenav.com
+notes: >-
+  Probed the .well-known discovery surface on www.telenav.com (the bare
+  apex telenav.com fails the TLS handshake and is unreachable directly;
+  api.telenav.com and developer.telenav.com do not resolve/connect).
+  No well-known documents are published. Absence recorded as valid data.
+hosts:
+  - host: https://www.telenav.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 404

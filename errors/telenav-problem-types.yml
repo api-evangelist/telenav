@@ -1,0 +1,44 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.telenav.com/entity-rest/search.html
+format: custom-status-envelope
+notes: >-
+  The Entity Service REST API does not use RFC 9457 problem+json. Every
+  response carries a top-level envelope of status {status, message},
+  response_time (ms), reference_id, and results[]. Application status codes
+  are five-digit Telenav codes documented per endpoint.
+envelope:
+  status_field: status.status
+  message_field: status.message
+  reference_field: reference_id
+problems:
+  - code: 12200
+    message: SUCCESS
+    description: Indicates that no errors occurred.
+    source: https://docs.telenav.com/entity-rest/search.html
+  - code: 12200
+    message: PARTIAL_SUCCESS
+    description: >-
+      Only applicable for batch entity look-up. Indicates that the look-up
+      operation for some of the requested IDs was not successful.
+    source: https://docs.telenav.com/entity-rest/lookup.html
+  - code: 12301
+    message: ENTITY_MOVED
+    description: Indicates an entity id change in the detail response.
+    source: https://docs.telenav.com/entity-rest/lookup.html
+  - code: 12400
+    message: INVALID_REQUEST
+    description: >-
+      Indicates either that a required parameter is missing or the value of a
+      parameter cannot be parsed.
+    source: https://docs.telenav.com/entity-rest/search.html
+  - code: 12404
+    message: ENTITY_NOT_FOUND
+    description: >-
+      Applicable only for single entity look-up. Indicates that the service
+      was not able to find data for the requested ID.
+    source: https://docs.telenav.com/entity-rest/lookup.html
+  - code: 12500
+    message: INTERNAL_SERVER_ERROR
+    description: Indicates technical difficulties on the API.
+    source: https://docs.telenav.com/entity-rest/search.html

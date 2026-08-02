@@ -1,0 +1,30 @@
+generated: '2026-07-21'
+method: derived
+source: https://docs.telenav.com/entity-rest/common.html
+notes: >-
+  Derived from the Entity Service REST documentation (no OpenAPI is
+  published, so spec-level evidence is unavailable). No published
+  compliance/certification program was found, so no Compliance pointer is
+  emitted.
+standards:
+  - id: oauth2
+    conforms: false
+    evidence: Authentication is a proprietary API key + SHA-256 request signature (x-tn-api_key / x-tn-api_signature headers), not OAuth 2.0.
+  - id: oidc
+    conforms: false
+    evidence: No openid-configuration published on any Telenav host (probed 404).
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors use a proprietary five-digit status envelope (status.status / status.message), not application/problem+json.
+  - id: pagination
+    conforms: true
+    evidence: Cursor-style pagination via the page_context parameter on search responses (docs.telenav.com/entity-rest/search.html).
+  - id: idempotency
+    conforms: false
+    evidence: No idempotency-key mechanism documented.
+  - id: json-api
+    conforms: false
+    evidence: Responses use a proprietary envelope (status, response_time, reference_id, results[]).
+  - id: tls
+    conforms: true
+    evidence: TA SDK requires OpenSSL for TLS 1.2 or higher secure connections (docs.telenav.com/overview/nav-tasdk.html).

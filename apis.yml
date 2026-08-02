@@ -1,8 +1,29 @@
 aid: telenav
 name: Telenav
-description: Telenav is a company surfaced as a portfolio company of menlo-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Telenav is a connected-car and location-based services company that powers
+  in-vehicle navigation (VIVID NAV), infotainment (VIVID IVI), and in-car
+  commerce (VIVID COMMERCE) for automotive partners including Daimler, Ford,
+  GM, Toyota, and Xpeng. Its developer surface centers on the Entity Service
+  REST API for location-aware semantic search, auto-suggest predictions,
+  entity detail lookup, and discovery including EV charge-station search,
+  alongside partner-distributed navigation and driver-intelligence SDKs
+  documented at docs.telenav.com and open-source Java tooling on Maven
+  Central.
 url: https://raw.githubusercontent.com/api-evangelist/telenav/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/3743554?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -10,11 +31,44 @@ x-backed-by:
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 13
+  pass: local-v1
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
-- Company
-apis: []
+- Mapping
+- Navigation
+- Location
+- Search
+- Automotive
+- Connected Cars
+- EV Charging
+- Points of Interest
+apis:
+- name: Telenav Entity Service REST API
+  description: >-
+    Location-based semantic search for the connected car - onebox search
+    with category, brand, corridor, polygon, and bounding-box filters,
+    reverse geocoding, EV charge-station search, auto-suggest and word
+    prediction, entity detail lookup (batch supported), and discovery of
+    places, brands, and categories. JSON over REST, versioned under /v5/,
+    authenticated with a Telenav-assigned API key plus per-request SHA-256
+    signature. API hosts are provisioned per automotive partner and are not
+    published publicly (docs reference a {host} placeholder).
+  humanURL: https://docs.telenav.com/overview/entity-rest.html
+  properties:
+  - type: Documentation
+    url: https://docs.telenav.com/overview/entity-rest.html
+  - type: Authentication
+    url: https://docs.telenav.com/entity-rest/common.html
+  tags:
+  - Search
+  - Location
+  - Points of Interest
+  - EV Charging
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -22,4 +76,50 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://telenav.com
+  url: https://www.telenav.com
+- type: DeveloperPortal
+  url: https://docs.telenav.com
+- type: Documentation
+  url: https://docs.telenav.com
+- type: APIReference
+  url: https://docs.telenav.com/api-references/sdk/entity/current/index.html
+- type: GettingStarted
+  url: https://docs.telenav.com/entity-android/install-sdk.html
+- type: Blog
+  url: https://www.telenav.com/blog
+- type: Support
+  url: https://www.telenav.com/contact
+- type: PrivacyPolicy
+  url: https://www.telenav.com/legal/policies-privacy-policy
+- type: TermsOfService
+  url: https://www.telenav.com/legal
+- type: GitHubOrganization
+  url: https://github.com/Telenav
+- type: DomainSecurity
+  url: security/telenav-domain-security.yml
+- type: Authentication
+  url: authentication/telenav-authentication.yml
+- type: Conventions
+  url: conventions/telenav-conventions.yml
+- type: ErrorCatalog
+  url: errors/telenav-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/telenav-lifecycle.yml
+- type: ChangeLog
+  url: changelog/telenav-changelog.yml
+- type: Conformance
+  url: conformance/telenav-conformance.yml
+- type: Packages
+  url: packages/telenav-packages.yml
+- type: SDKs
+  url: packages/telenav-packages.yml
+- type: Sandbox
+  url: sandbox/telenav-sandbox.yml
+- type: Webhooks
+  url: asyncapi/telenav-webhooks.yml
+- type: WellKnown
+  url: well-known/telenav-well-known.yml
+- type: MCPServer
+  url: mcp/telenav-mcp.yml
+- type: LLMsTxt
+  url: llms/telenav-llms.txt

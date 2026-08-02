@@ -1,0 +1,51 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.telenav.com/entity-rest/common.html
+notes: >-
+  Cross-cutting request/response semantics of the Telenav Entity Service
+  REST API, captured from docs.telenav.com (no OpenAPI is published).
+authentication:
+  style: api-key-plus-request-signature
+  headers: [x-tn-api_key, x-tn-api_signature, x-tn-deviceid]
+  detail: authentication/telenav-authentication.yml
+idempotency:
+  supported: false
+  notes: No idempotency-key mechanism is documented.
+pagination:
+  style: cursor
+  request_param: page_context
+  notes: >-
+    Pass the page_context value returned by a previous search response to
+    fetch the next page of results; when page_context is present all other
+    request parameters are ignored. Default result limit is 10 (limit param).
+common_parameters:
+  - name: user_id
+    description: Unique user identifier (query param on GET, JSON body field on POST).
+  - name: locale
+    description: Preferred response language (e.g. en-US).
+request_style:
+  methods: [GET, POST]
+  notes: >-
+    GET endpoints offer basic functionality via query parameters; POST
+    endpoints accept a JSON request object with full filter support
+    (category, brand, corridor, polygon, bounding-box, EV filters).
+response_envelope:
+  fields:
+    - name: status
+      description: "Object with numeric status and message (e.g. 12200 SUCCESS)."
+    - name: response_time
+      description: Response time in milliseconds.
+    - name: reference_id
+      description: Reference id associated with the response.
+    - name: results
+      description: List of entities matching the request.
+  errors: errors/telenav-problem-types.yml
+versioning:
+  style: uri-path
+  current: v5
+  notes: All Entity Service REST URIs are versioned under /v5/.
+rate_limits:
+  documented: false
+  notes: No public rate-limit documentation was found.
+tracing:
+  response_reference_id: reference_id

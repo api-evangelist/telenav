@@ -1,0 +1,36 @@
+# Telenav
+
+> Telenav is a connected-car and location-based services company providing in-vehicle navigation (VIVID NAV), infotainment (VIVID IVI), and in-car commerce (VIVID COMMERCE) for automotive partners including Daimler, Ford, GM, Toyota, and Xpeng. Its developer surface centers on the Entity Service REST API — location-aware semantic search, suggestions, entity detail lookup, and discovery (including EV charge-station search) — plus partner-distributed SDKs for navigation and driver intelligence.
+
+Telenav publishes no llms.txt of its own (probed 404 on www.telenav.com and docs.telenav.com); this file was generated from the API Evangelist catalog entry and docs.telenav.com on 2026-07-21.
+
+## APIs
+
+- [Entity Service REST — Overview](https://docs.telenav.com/overview/entity-rest.html): Semantic search, prediction, lookup, and discover services (v5, JSON).
+- [Search](https://docs.telenav.com/entity-rest/search.html): Onebox, category/brand filter, corridor, polygon, bbox, reverse geocoding, EV charge-station search (/v5/search/json).
+- [Predictions](https://docs.telenav.com/entity-rest/prediction.html): Auto-suggest and word prediction (/v5/prediction/suggestion/json, /v5/prediction/word/json).
+- [Lookup](https://docs.telenav.com/entity-rest/lookup.html): Entity detail by ID, batch supported (/v5/detail/json).
+- [Discover](https://docs.telenav.com/entity-rest/discover.html): Discover place/brand/category and the POI category tree (/v5/discover/*, /v5/category/json).
+- [Common (auth + parameters)](https://docs.telenav.com/entity-rest/common.html): API key + SHA-256 request signature headers (x-tn-api_key, x-tn-api_signature), common headers and parameters.
+- [EventHub](https://docs.telenav.com/overview/eventhub.html): Publish-subscribe messaging APIs for the Telenav Cloud.
+- [Notification Service](https://docs.telenav.com/overview/notification-service.html): Subscribe to event types with delivery via email or http/https endpoints.
+
+## SDKs
+
+- [Entity SDK Android](https://docs.telenav.com/overview/entity-android.html)
+- [Entity SDK iOS](https://docs.telenav.com/overview/entity-ios.html)
+- [Nav TA SDK (C++/Android)](https://docs.telenav.com/overview/nav-tasdk.html)
+- [Drive Motion Android](https://docs.telenav.com/overview/drivemotion-android.html) / [iOS](https://docs.telenav.com/overview/drivemotion-ios.html) / [React Native](https://docs.telenav.com/overview/drivemotion-react-native.html)
+- [Android SDK demo + trial keys](https://github.com/Telenav/nav-sdk-demo)
+
+## Open Source
+
+- [GitHub organization](https://github.com/Telenav)
+- [KivaKit Java frameworks](https://github.com/Telenav/kivakit) (Maven Central: com.telenav.kivakit)
+- [MesaKit mapping toolkit](https://github.com/Telenav/mesakit) (Maven Central: com.telenav.mesakit)
+
+## Company
+
+- [Website](https://www.telenav.com)
+- [Blog](https://www.telenav.com/blog)
+- [Legal](https://www.telenav.com/legal)

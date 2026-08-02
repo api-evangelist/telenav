@@ -1,0 +1,30 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.telenav.com/overview/eventhub.html
+spec_type: Webhooks
+notes: >-
+  Telenav publishes no AsyncAPI document. Its documented event surface is
+  EventHub, a distributed publish-subscribe messaging system whose APIs let
+  applications publish and retrieve events to/from the Telenav Cloud, and
+  the Notification Service, which lets internal and external systems
+  subscribe to an event type and receive notifications via email or
+  http/https endpoints (webhooks) and manage subscriptions (subscribe,
+  unsubscribe, get subscription status). Both docs pages are marked "work
+  in progress" and detailed API references are not public.
+surfaces:
+  - name: EventHub
+    kind: publish-subscribe
+    docs: https://docs.telenav.com/overview/eventhub.html
+    capabilities:
+      - High-volume event ingestion (events/sec at scale)
+      - Asynchronous inbound requests
+      - Publishing to external systems
+      - Sourcing events to the Telenav Analytics Platform
+  - name: Notification Service
+    kind: webhooks
+    docs: https://docs.telenav.com/overview/notification-service.html
+    delivery: [email, http, https]
+    capabilities:
+      - Subscribe to an event type
+      - Unsubscribe
+      - Get subscription status

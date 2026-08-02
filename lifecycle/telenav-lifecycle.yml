@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.telenav.com/
+versioning:
+  scheme: uri-path
+  current: v5
+  docs: https://docs.telenav.com/overview/entity-rest.html
+  notes: >-
+    The Entity Service REST API is versioned in the URI path (/v5/). The
+    Entity SDK API references are published per version line on
+    docs.telenav.com (current 2.3.x, with 2.1.x, 2.0.x, 1.9.x beta and
+    1.7.x still published).
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No public deprecation policy or Sunset/Deprecation header support is documented.
+sla:
+  url: null
+status_page: null
+release_notes:
+  - name: Entity Service Android release notes
+    url: https://docs.telenav.com/entity-android/release-note.html
+  - name: Telenav Android SDK (tasdk) changelog
+    url: https://github.com/Telenav/nav-sdk-demo/blob/main/CHANGELOG.md
+deprecated_operations: []

@@ -1,0 +1,41 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/Telenav/nav-sdk-demo/blob/main/CHANGELOG.md
+scheme: four-part version (e.g. 1.4.42.2)
+current_version: 1.4.42.2
+notes: >-
+  Telenav publishes no dated changelog for the Entity Service REST API
+  itself; the public changelog surface is the Telenav Android SDK (tasdk)
+  CHANGELOG.md in the nav-sdk-demo GitHub repository, plus per-version SDK
+  release-note pages on docs.telenav.com. Recent entries below are captured
+  verbatim from the SDK changelog (dates as published).
+entries:
+  - version: 1.4.42.2
+    date: '2023-02-05'
+    breaking: false
+    highlights:
+      - General bugfixes
+  - version: 1.4.41.4
+    date: '2023-10-23'
+    breaking: false
+    highlights:
+      - General bugfixes
+  - version: 1.4.40.2
+    date: '2023-09-05'
+    breaking: false
+    highlights:
+      - General bugfixes and performance improvements
+      - Update native third-party libraries
+  - version: 1.4.39.2
+    date: '2023-07-26'
+    breaking: false
+    highlights:
+      - General bugfixes
+  - version: 1.4.38.2
+    date: '2023-06-26'
+    breaking: false
+    highlights:
+      - General bugfixes
+related:
+  - name: Entity Service Android release notes
+    url: https://docs.telenav.com/entity-android/release-note.html

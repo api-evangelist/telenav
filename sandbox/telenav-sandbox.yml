@@ -1,0 +1,17 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/Telenav/nav-sdk-demo
+notes: >-
+  Telenav publishes no hosted sandbox or test-data catalog. Its public
+  trial surface is the nav-sdk-demo GitHub repository, which ships a free
+  trial API key/secret for the EU region so developers can run the Android
+  SDK demo. Trial credentials expire after six months, after which the
+  latest code must be checked out to obtain a new trial key. The credential
+  values themselves are intentionally not copied into this artifact.
+trial:
+  program: nav-sdk-demo trial API key/secret
+  region: EU
+  expires: six months per issued key
+  how_to_obtain: Check out the latest code from https://github.com/Telenav/nav-sdk-demo
+test_values: []
+test_modes: []

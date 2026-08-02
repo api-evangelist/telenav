@@ -1,0 +1,35 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.telenav.com/entity-rest/common.html
+docs: https://docs.telenav.com/entity-rest/common.html#authentication
+notes: >-
+  Telenav publishes no OpenAPI, so this profile is captured from the Entity
+  Service REST documentation rather than derived from securitySchemes. The
+  API uses a Telenav-assigned API key plus a per-request HMAC-style API
+  signature; credentials are provisioned to automotive partners (a free
+  six-month trial key/secret for the EU region is distributed through the
+  Telenav/nav-sdk-demo GitHub repository).
+summary:
+  types: [apiKey, requestSignature]
+  api_key_in: [header]
+  oauth2_flows: []
+schemes:
+  - name: x-tn-api_key
+    type: apiKey
+    in: header
+    parameter: x-tn-api_key
+    description: Telenav assigned API key, sent on every request.
+  - name: x-tn-api_signature
+    type: apiKey
+    in: header
+    parameter: x-tn-api_signature
+    description: >-
+      Per-request API signature computed as
+      apikey + ":" + timestamp + ":" + SHA256(apikey + ":" + timestamp + ":" + apisecret),
+      where timestamp is UTC seconds. The docs include a sample Postman
+      pre-request script for generating it.
+  - name: x-tn-deviceid
+    type: apiKey
+    in: header
+    parameter: x-tn-deviceid
+    description: Unique device identifier header, common to all endpoints.
