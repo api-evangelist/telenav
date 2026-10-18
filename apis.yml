@@ -57,7 +57,7 @@ tags:
 - Location
 - Search
 - Automotive
-- Connected Car
+- Connected Vehicles
 - EV Charging
 - Points of Interest
 tags_raw:
@@ -69,6 +69,7 @@ tags_raw:
 - Connected Cars
 - EV Charging
 - Points of Interest
+- Connected Car
 apis:
 - name: Telenav Entity Service REST API
   description: >-
