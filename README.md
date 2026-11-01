@@ -64,6 +64,106 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Telenav is a connected-car and location-based services company that powers in-vehicle navigation (VIVID NAV), infotainment (VIVID IVI), and in-car commerce (VIVID COMMERCE) for automotive partners including Daimler, Ford, GM, Toyota, and Xpeng. Its developer surface centers on the Entity Service REST API — location-aware semantic search, predictions, entity lookup, and discovery (including EV charge-station search) — documented at [docs.telenav.com](https://docs.telenav.com), alongside partner-distributed navigation and driver-intelligence SDKs and open-source Java tooling (KivaKit, MesaKit) on Maven Central.
+Telenav is a connected-car and location-based services company that powers in-vehicle navigation (VIVID NAV), infotainment (VIVID IVI), and in-car commerce (VIVID COMMERCE) for automotive partners including Daimler, Ford, GM, Toyota, and Xpeng. Its developer surface centers on the Entity Service REST API for location-aware semantic search, auto-suggest predictions, entity detail lookup, and discovery including EV charge-station search, alongside partner-distributed navigation and driver-intelligence SDKs documented at docs.telenav.com and open-source Java tooling on Maven Central.
 
-Backed by: menlo-ventures — https://www.telenav.com
+**Areas:** Mapping · Navigation · Location · Search · Automotive · Connected Vehicles · EV Charging · Points of Interest
+
+## Telenav on APIs.io
+
+Everything profiled for Telenav is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/telenav/](https://apis.io/providers/telenav/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Telenav Entity Service REST API](https://apis.io/apis/telenav/telenav-entity-service-rest-api/) — Location-based semantic search for the connected car - onebox search with category, brand, corridor, polygon, and bounding-box filters, reverse geocoding,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Telenav Webhooks](https://apis.io/asyncapis/telenav/telenav-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [telenav-entity](https://apis.io/servers/telenav/telenav-entity/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Telenav Authentication](https://apis.io/security/telenav/telenav-authentication/)
+- [Telenav Domain Security](https://apis.io/security/telenav/telenav-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.telenav.com)
+- [Documentation](https://docs.telenav.com)
+- [Getting started](https://docs.telenav.com/entity-android/install-sdk.html)
+- [API reference](https://docs.telenav.com/api-references/sdk/entity/current/index.html)
+- [Support](https://www.telenav.com/contact)
+- [Blog](https://www.telenav.com/blog)
+- [Terms of service](https://www.telenav.com/legal)
+- [Privacy policy](https://www.telenav.com/legal/policies-privacy-policy)
+- [GitHub](https://github.com/Telenav)
+
+## API Evangelist rating
+
+**Kin Score 39.7** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 39.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 71.4 |
+| Access clarity | 21.1 |
+
+**Agent readiness 22.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 20.5** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/telenav/](https://apis.io/providers/telenav/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Telenav: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/telenav/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
